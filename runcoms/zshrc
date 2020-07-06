@@ -1,9 +1,9 @@
 #
 # Executes commands at the start of an interactive session.
 #
-# Authors:
-#   Sorin Ionescu <sorin.ionescu@gmail.com>
-#
+
+# Exports that must load before Prezto
+export NVM_LAZY_LOAD=true
 
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
@@ -13,10 +13,13 @@ fi
 # Folder commands
 alias c!='cd ~/Code'
 alias d!='cd ~/Code/Dotfiles'
+alias j!='cd ~/Code/JavaScript'
 alias l!='cd ~/Code/Laravel'
 alias s!='cd ~/Code/Swift'
 
 # ZSH / Prezto commands
+alias de!='code ~/Code/Dotfiles/install.conf.yaml'
+alias di!='sh ~/Code/Dotfiles/install'
 alias p!='code ~/.zpreztorc'
 alias r!='source ~/.zshrc'
 alias z!='code ~/.zshrc'
