@@ -16,6 +16,7 @@ alias d!='cd ~/Code/Dotfiles'
 alias j!='cd ~/Code/JavaScript'
 alias l!='cd ~/Code/Laravel'
 alias s!='cd ~/Code/Swift'
+alias w!='cd ~/Code/Work'
 
 # ZSH / Prezto commands
 alias de!='code ~/Code/Dotfiles/install.conf.yaml'
