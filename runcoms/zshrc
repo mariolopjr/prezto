@@ -10,6 +10,9 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+# Apple commands
+alias nogate='xattr -rd com.apple.quarantine'
+
 # Folder commands
 alias c!='cd ~/Code'
 alias d!='cd ~/Code/Dotfiles'
