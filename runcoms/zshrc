@@ -21,6 +21,9 @@ alias l!='cd ~/Code/Laravel'
 alias s!='cd ~/Code/Swift'
 alias w!='cd ~/Code/Work'
 
+# File Commands
+alias hidden='ls -a | grep "^\."'
+
 # ZSH / Prezto commands
 alias de!='code ~/Code/Dotfiles/install.conf.yaml'
 alias di!='sh ~/Code/Dotfiles/install'
@@ -38,23 +41,34 @@ alias dcud='docker-compose up -d'
 alias dcd='docker-compose down'
 
 # Brew commands
-alias bup!='brew update && brew upgrade && brew cask upgrade --greedy'
+alias bup!='brew update && brew upgrade'
 alias cup!='brew cask upgrade --greedy'
 alias bd!='brew bundle dump --global --force'
 alias bf!='code ~/.Brewfile'
 
 alias dmg='hdiutil attach'
+alias dfimage='docker run -v /var/run/docker.sock:/var/run/docker.sock --rm chenzj/dfimage'
 
 function gi() { curl -sLw "\n" https://www.gitignore.io/api/$@ ;}
 
 # Git commands
 
 
+# Add Golang modules to PATH
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
 # Add Composer packages to PATH
-export PATH=~/.composer/vendor/bin:$PATH
+export PATH=$PATH:$HOME/.composer/vendor/bin
 
 # Add Ruby packages to PATH
 export PATH="$PATH:$HOME/.rvm/bin"
 
 # Add Python packages to PATH
 export PATH="$PATH:$HOME/.env/bin"
+
+# Add LaTeX packages to PATH
+export PATH="$PATH:/usr/local/texlive/2020/bin/x86_64-darwin"
+
+# Add custom package to PATH
+export PATH="$PATH:$HOME/.bin"
