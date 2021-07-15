@@ -72,3 +72,8 @@ export PATH="$PATH:/usr/local/texlive/2020/bin/x86_64-darwin"
 
 # Add custom package to PATH
 export PATH="$PATH:$HOME/.bin"
+
+# Luarocks path stuff
+export LUA_PATH='/usr/local/Cellar/luarocks/3.7.0/share/lua/5.1/?.lua;/usr/local/share/lua/5.1/?.lua;/usr/local/share/lua/5.1/?/init.lua;/usr/local/lib/lua/5.1/?.lua;/usr/local/lib/lua/5.1/?/init.lua;./?.lua;./?/init.lua;/Users/mario/.luarocks/share/lua/5.1/?.lua;/Users/mario/.luarocks/share/lua/5.1/?/init.lua'
+export LUA_CPATH='/usr/local/lib/lua/5.1/?.so;/usr/local/lib/lua/5.1/loadall.so;./?.so;/Users/mario/.luarocks/lib/lua/5.1/?.so'
+export PATH="$PATH:~/.luarocks/bin"
